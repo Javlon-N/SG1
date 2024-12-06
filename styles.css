@@ -1,0 +1,90 @@
+body {
+  background-image: url(./img/Background.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: "Jura";
+  height: 200vh;
+}
+
+.mainfont {
+  font-size: 2rem;
+  align-self: flex-start;
+}
+#main-logo {
+  width: 60px;
+  align-self: flex-start;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+a:hover {
+  color: #ecdfcc;
+}
+nav {
+  background-color: #1e201e;
+}
+.drop-button {
+  background-color: #1e201e;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  right: 0px;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  background-color: #1e201e;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.drop-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  right: 0;
+}
+.drop-content a:hover {
+  background-color: #3c3d37;
+  cursor: pointer;
+}
+.dropdown:hover .drop-content {
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr  3fr  1fr;
+  gap: 80px;
+}
+.blur {
+  backdrop-filter: blur(10px);
+}
+.flex {
+  display: inline-flex;
+  flex-direction: column;
+}
+.center-div{
+    background-color: #697565;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+}
+.center-div p{
+    opacity: 0.8;
+}
